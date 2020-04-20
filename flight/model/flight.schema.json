@@ -37,6 +37,12 @@
 					"minLength": 4,
 					"maxLength": 4
 				},
+				"iataCode": {
+					"type": "string",
+					"description": "The aircrafts IATA-Code",
+					"minLength": 3,
+					"maxLength": 3
+				},
 				"modelName": {
 					"type": "string",
 					"description": "The model name of the aircraft"

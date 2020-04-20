@@ -64,6 +64,23 @@
 					}
 				}
 			}
+		},
+		"email": {
+			"description": "The e-mail address of the location (if different from service/provider)",
+			"type": "string"
+		},
+		"website": {
+			"description": "The website of the location (if different from service/provider)",
+			"type": "string",
+			"format": "uri"
+		},
+		"phone": {
+			"description": "The phone number of the location (if different from service/provider)",
+			"type": "string"
+		},
+		"fax": {
+			"description": "The fax number of the location (if different from service/provider)",
+			"type": "string"
 		}
 	}
 }

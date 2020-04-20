@@ -59,6 +59,13 @@
           }
         }
       }
-    }
+    },
+	"facilityType": {
+		"type": "string",
+		"enum": ["airport", "train-station"],
+		"description": "Indicates the type of the arrival facility, defaults to 'airport'. In cases of rail air alliances the facility may be a train station, and the actual movement is not a flight but a train ride. As soon as the arrival or departure facilityType is 'train-station', the 'flight' can be interpreted as train ride.",
+		"required": true,
+		"default": "airport"
+	}
   }
 }

@@ -1,0 +1,16 @@
+{
+	"type": "object",
+	"title": "LanguageText",
+	"properties": {
+		"locale": {
+			"type": "string",
+			"description": "The locale of the 'text' property in BCP 47 format, e.g. 'de' or 'en-US'."
+			"required": true
+		},
+		"text": {
+			"type": "string",
+			"description": "The actual text value in language described by 'locale'."
+			"required": true
+		}
+	}
+}

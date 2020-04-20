@@ -96,6 +96,26 @@
 		"description": "Indicates the type of the departure facility, defaults to 'airport'. In cases of rail air alliances the facility may be a train station, and the actual movement is not a flight but a train ride. As soon as the arrival or departure facilityType is 'train-station', the 'flight' can be interpreted as train ride.",
 		"required": true,
 		"default": "airport"
+	},
+	"additionalInformation": {
+		"type": "array",
+		"description": "Additional free text information.",
+		"items": {
+			"type": "object",
+			"title": "FlightInformation"
+			"description": "A single flight information for multiple locales."
+			"properties": {
+				"values": {
+					"type": "array",
+					"required": true,
+					"minItems": 1
+					"description": "Contains the flight information for multiple locales."
+					"items": {
+						"$ref": "../../restBase/model/languageText.schema.json"
+					}
+				}
+			}
+		}
 	}
   }
 }

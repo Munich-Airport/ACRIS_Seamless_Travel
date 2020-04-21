@@ -102,14 +102,14 @@
 		"description": "Additional free text information.",
 		"items": {
 			"type": "object",
-			"title": "FlightInformation"
-			"description": "A single flight information for multiple locales."
+			"title": "FlightInformation",
+			"description": "A single flight information for multiple locales.",
 			"properties": {
 				"values": {
 					"type": "array",
 					"required": true,
-					"minItems": 1
-					"description": "Contains the flight information for multiple locales."
+					"minItems": 1,
+					"description": "Contains the flight information for multiple locales.",
 					"items": {
 						"$ref": "../../restBase/model/languageText.schema.json"
 					}
